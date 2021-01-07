@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPanelActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/filter"
+        android:padding="10dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Market name:"
+            android:id="@+id/market_name"
+            android:layout_alignBaseline="@+id/et_market_name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_market_name"
+            android:ems="15"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/company_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company name:"
+            android:id="@+id/company_name"
+            android:layout_alignBaseline="@+id/et_company_name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_company_name"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/market_name"
+            android:layout_toEndOf="@+id/company_name"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type:"
+            android:id="@+id/type"
+            android:layout_alignBaseline="@+id/et_type"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_type"
+            android:ems="15"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/company_name"
+            android:layout_toEndOf="@+id/company_name"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Created at:"
+            android:id="@+id/created_at"
+            android:layout_alignBaseline="@+id/et_created_at"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_created_at"
+            android:ems="15"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentEnd="true"
+            android:inputType="date"
+            android:layout_below="@+id/et_type"
+            android:layout_toEndOf="@+id/company_name"
+            android:layout_marginTop="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filter"
+            android:layout_below="@+id/et_created_at"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_filter"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/filter"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="10dp"
+        android:id="@+id/view" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="5dp"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:id="@+id/viewData"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brand Name:"
+            android:id="@+id/bn"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_bn"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBaseline="@+id/bn"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/mn">
+            <requestFocus/>
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Type:"
+            android:id="@+id/pt"
+            android:layout_alignBaseline="@+id/et_pt"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_pt"
+            android:ems="15"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/et_bn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/mn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SKU Name:"
+            android:id="@+id/sn"
+            android:layout_alignBaseline="@+id/et_sn"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_sn"
+            android:ems="15"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/et_pt"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/mn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Market Name:"
+            android:id="@+id/mn"
+            android:layout_alignBaseline="@+id/et_mn"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_mn"
+            android:ems="15"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/et_sn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/mn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status:"
+            android:id="@+id/status"
+            android:layout_alignBaseline="@+id/et_status"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_status"
+            android:ems="15"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/et_mn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/mn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Created at:"
+            android:id="@+id/createdAt"
+            android:layout_alignBaseline="@+id/et_createdAt"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_createdAt"
+            android:ems="15"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/et_status"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/mn"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/et_createdAt"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

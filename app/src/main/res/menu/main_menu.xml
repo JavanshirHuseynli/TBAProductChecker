@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="@string/logout" android:id="@+id/logout"/>
+    <item android:title="@string/new_data" android:id="@+id/new_data"/>
+    <item android:title="@string/download_images" android:id="@+id/download_images"/>
+    <item android:title="@string/remove_pref" android:id="@+id/remove_pref"/>
+    <item android:title="@string/upload_db" android:id="@+id/upload_db"/>
+    <item android:title="@string/upload_xml" android:id="@+id/upload_xml"/>
+    <item android:title="@string/remove_db" android:id="@+id/remove_db"/>
+    <item android:title="@string/admin_panel" android:id="@+id/admin_panel"/>
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+</menu>

@@ -1,0 +1,134 @@
+<resources>
+       
+    <string name="app_name">TBA Retail Audit</string><![CDATA[
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+    ]]>
+    <string name="login">Giriş</string>
+       
+    <string name="unique_id">Unikal identifikasiya</string><![CDATA[
+       
+       
+    ]]>
+    <string name="product_checker">Retail Audit</string>
+       
+    <string name="market">Market</string>
+       
+    <string name="market_address">Market Address</string>
+       
+    <string name="company_logo">Şirkət logo</string>
+       
+    <string name="company">Şirkət</string>
+       
+    <string name="analyze_type">Təhlil növü</string>
+       
+    <string name="question">Sual</string>
+       
+    <string name="analyze_question">Təhlil sualı</string>
+       
+    <string name="back">Geri</string>
+       
+    <string name="next">Növbəti</string>
+       
+    <string name="category">Kateqoriya</string>
+       
+    <string name="yes">Bəli</string>
+       
+    <string name="no">Xeyr</string>
+       
+    <string name="company_size">Şirkət ölçüsü</string>
+       
+    <string name="answer">Cavab</string>
+       
+    <string name="our_logo">Bizim logo</string>
+       
+    <string name="sub_category">Alt kateqoriya</string>
+       
+    <string name="success_finish">Uğurla tamamlandı</string>
+       
+    <string name="start_new">İndi başlayacaqsınız</string>
+       
+    <string name="countdown_alert">Növbəti növ avtomatik olaraq başlayacaq:</string>
+       
+    <string name="dismiss">Ləğv et</string>
+
+    <string name="returnMenu">Menyuya qayıt</string>
+
+    <string name="dismiss_to_tasks">Cavabları yoxla</string>
+       
+    <string name="product_image">Məhsul şəkli</string>
+       
+    <string name="box_count">In-home tipli dondurma dolablarının sayını daxil edin</string>
+       
+    <string name="alert_amount">Sayı daxil edin. Əgər yoxdursa 0 daxil edin</string>
+       
+    <string name="amount_all">Lütfən bütün məhsul üzlərinin sayını daxil edin</string>
+       
+    <string name="please_wait_loc">Lütfən gözləyin, yerinizi təyin edirik.</string><![CDATA[
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+    ]]>
+    <string name="next_market">Növbəti marketi seçmək üçün marketlər listinə yönlədiriləcəksiniz.</string>
+    <string name="redirect_to">Növbəti kateqoriyanı seçmək üçün kateqoriyalar listinə yönlədiriləcəksiniz</string>
+    <string name="ref_count">&#160;tipli dondurma dolablarının sayını daxil edin</string>
+    <string name="loading_data">Məlumatlar yüklənir...</string>
+    <string name="osa">OSA</string>
+    <string name="npd">NPD</string>
+    <string name="planogram">Planogram</string>
+    <string name="sos">SOS</string>
+    <string name="sod">SOD</string>
+    <string name="osa_ic">OSA IC</string>
+    <string name="npd_ic">NPD IC</string>
+    <string name="planogram_ic">Planogram IC</string>
+    <string name="sos_ic">SOS IC</string>
+    <string name="continue_txt">Davam edin</string>
+    <string name="header">Header</string>
+    <string name="search">Axtarış</string>
+    <string name="finish_analyze">Hesabatı bitirmək</string>
+    <string name="market_count">Qalan market sayı</string>
+    <string name="finished">Bitirilmiş</string>
+    <string name="new_month">Yeni ay</string>
+    <string name="market_finished">Marketi bitirdinizmi?</string>
+    <string name="maps">Xəritəyə keçmək</string>
+    <string name="please_wait_markets">Zəhmət olmasa gözləyin.\nMarketlər yüklənir...</string>
+    <string name="admin_panel">Admin Panel</string>
+    <string name="logout">Hesabdan çıxmaq</string>
+    <string name="new_data">Məlumatları Yenilə</string>
+    <string name="download_images">Şəkilləri Endir</string>
+    <string name="remove_pref">Yaddaşı Təmizlə</string>
+    <string name="offline_mode">Offline Mode</string>
+    <string name="upload_db">Arx. Məl. Yüklə</string>
+    <string name="remove_db">Arx. Məl. Sil</string>
+    <string name="upload_xml">XML faylı yüklə</string>
+    <string name="upload_answers">Upload Answers</string>
+    <string name="images_downloading">Şəkillər yüklənir...</string>
+    <string name="osa_only">Ancaq OSA</string>
+    <string name="all">Bütün Suallar</string>
+    <string name="close">Bağlamaq</string>
+</resources>
+
